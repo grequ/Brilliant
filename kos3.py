@@ -1,4 +1,8 @@
-x = 1
-if x == 1:
-    # indented four spaces
-    print("x is 1.")
+from turtle import *
+width(5)
+
+for i in range(20):
+    forward(10)
+    left(3)
+
+bye()
