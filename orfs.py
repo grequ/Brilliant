@@ -15,7 +15,7 @@ def orf_finder(seq):
     # The function can search the RNA sequence offset by 0, 1 or 2
     for frame in range(3): 
         # From the first frame on, the sequence is translated using the translate() method
-        for pro in seq[frame:].translate(table).split("*"): 
+        for pro in seq[frame:].translate(table): #.split("*"): 
             # If the protein is longer than 100 amino acids, and it starts with the starting codon M, record it.
             if len(pro) > 100 and pro[0] == "M": 
                 output.append("%s...%s Amino Acids: %i, Frame offset: %i" \
