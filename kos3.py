@@ -1,8 +1,10 @@
 from turtle import *
-width(5)
+import turtle
+import time
 
-for i in range(20):
-    forward(10)
-    left(3)
-
-bye()
+tur = turtle.Turtle()
+tur_txt = turtle.Turtle()
+tur_txt.goto(tur.position()[0], tur.position()[1])
+tur_txt.write("Python Guides")
+time.sleep(2)
+turtle.done()
